@@ -1,2 +1,5 @@
-# Nirali_8908253
-Repository for Lab Task-3 of software Testing Methodologies
+Name: Nirali Nirav Patel
+
+Project Title: Lab-3
+
+Student Id: 8908253
