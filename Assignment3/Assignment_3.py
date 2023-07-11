@@ -30,9 +30,26 @@ video_link.click()
 # Waiting for the searched subject details page to load
 time.sleep(2)
 
-# Verifying that the text is Python (Programming Language)
-video_text = driver.find_element("xpath","/html/body/main/section[1]/div/section[2]/div/ul/li/a")
-assert video_text.text == "Python (Programming Language)"
+# playing video
+play_video = driver.find_element("xpath","/html/body/main/section[1]/section/section/a/span/span")
+play_video.click()
+
+# Waiting for the searched subject details page to load
+time.sleep(2)
+
+# moving to exercise files details
+exercise_files = driver.find_element("xpath","/html/body/main/section[1]/div/div/ul/li[2]/button")
+exercise_files.click()
+
+# Waiting for the searched subject details page to load
+time.sleep(2)
+
+# Getting back to preview page of course
+back_to_preview_page = driver.find_element("xpath","/html/body/main/section[1]/section/section/div/div/div/h2/a")
+back_to_preview_page.click()
+
+# Waiting for the searched subject details page to load
+time.sleep(2)
 
 # Verifying that the rating is > 4
 rating_video_text = driver.find_element("xpath","/html/body/main/section[1]/div/section[5]/div/div/section/div[1]/h3/span[1]")
